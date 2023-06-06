@@ -33,3 +33,15 @@ img {
   max-width: 100%;
   height: auto;
 }
+h1{
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 3rem;
+}
+.gridRow {
+  border: 1px solid black;
+}
+
+.cell {
+  border: 1px solid black;
+}
