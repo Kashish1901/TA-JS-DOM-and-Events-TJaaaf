@@ -1,31 +1,58 @@
-const container = document.getElementById("container");
-let rows = document.getElementsByClassName("gridRow");
-let cells = document.getElementsByClassName("cell");
-
-// Creates a default grid sized 16x16
-function defaultGrid() {
-    makeRows(16);
-    makeColumns(16);
+function getRandomNumber(max) {
+    return Math.floor(Math.random() * max);
 }
 
-// Takes (rows, columns) input and makes a grid
-function makeRows(rowNum) {
+function generateRandomcolor() {
+    let hexCharacters = [
+        "0" ,
+        "1" ,
+        "2",
+        "3",
+        "4",
+        "5" ,
+        "6" ,
+        "7" ,
+        "8" ,
+        "9" ,
+        "a" ,
+        "b" ,
+        "c" ,
+        "d" ,
+        "e" ,
+        "f"
+    ];
 
-    // Creates rows
-    for (r = 0; r < rowNum; r++) {
-        let row = document.createElement("div");
-        container.appendChild(row).className = "gridRow";
-    };
-};
+    let color = "#";
 
-// Creates columns
-function makeColumns(cellNum) {
-    for (i = 0; i < rows.length; i++) {
-        for (j = 0; j < cellNum; j++) {
-            let newCell = document.createElement("div");
-            rows[j].appendChild(newCell).className = "cell";
-        };
+    for (let i = 0 ; i <6 ; i ++) {
+        let randomNumber = getRandomNumber(16);
+        color = color + hexCharacters[randomNumber];
+    }
 
-    };
-};
+    return color;
+}
 
+let parentBox = document.querySelector('.boxes');
+
+for (let i = 0 ; i < 500 ; i++){
+    let div = document.createElement('div');
+    div.classList.add('box');
+    let h3 = document.createElement('h3');
+    let randomNo = getRandomNumber(500);
+    h3.innerText = randomNo;
+    div.append(h3);
+    parentBox.append(div);
+}
+let allBoxes = document.querySelectorAll('.box');
+
+
+function handleMouseMove() {
+allBoxes.forEach((box) => {
+    box.style.backgroundColor = generateRandomcolor();
+
+   box.querySelector("h3").innerText = getRandomNumber(500);
+});
+}
+
+
+parentBox.addEventListener("mousemove" , handleMouseMove);
