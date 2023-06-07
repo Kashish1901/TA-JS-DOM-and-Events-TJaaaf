@@ -1,0 +1,55 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+h1{
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 3rem;
+}
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+#container{
+  width: 1400px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.box{
+  width: 4rem;
+  height: 4rem;
+  border: .1rem solid black;
+  display:flex;
+}

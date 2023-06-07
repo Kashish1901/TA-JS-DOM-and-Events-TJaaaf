@@ -1,0 +1,59 @@
+
+function getRandomNumber(max) {
+    return Math.floor(Math.random() * max);
+}
+
+function generateRandomcolor() {
+    let hexCharacters = [
+        "0" ,
+        "1" ,
+        "2",
+        "3",
+        "4",
+        "5" ,
+        "6" ,
+        "7" ,
+        "8" ,
+        "9" ,
+        "a" ,
+        "b" ,
+        "c" ,
+        "d" ,
+        "e" ,
+        "f"
+    ];
+
+    let color = "#";
+
+    for (let i = 0 ; i < 6 ; i++) {
+        let randomNo = getRandomNumber(16);
+        color = color + hexCharacters[randomNo];
+    }
+    return color;
+}
+
+let parentBox = document.querySelector('.boxes');
+
+for (let i = 0 ; i < 500 ; i++){
+    let div = document.createElement('div');
+    div.classList.add('box');
+    let h3 = document.createElement('h3');
+    let randomNum = getRandomNumber(500);
+    h3.innerText = randomNum;
+
+    div.append(h3);
+
+    parentBox.append(div);
+}
+
+let allBoxes = document.querySelectorAll('.box');
+
+function handleMouseMove() {
+    allBoxes.forEach((box) => {
+        box.style.backgroundColor = generateRandomcolor();
+        box.querySelector('h3').innerText = getRandomNumber(500);
+    })
+}
+
+
+parentBox.addEventListener("mousemove" , handleMouseMove)
