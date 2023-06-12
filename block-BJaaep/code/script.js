@@ -1,12 +1,24 @@
-let allBoxes = document.querySelector(".box");
+let firstBox = document.querySelectorAll(".first li");
+let secondBox = document.querySelector(".second");
 
-function handleClick(
- for(let i=0 ; i <= 12 ; i++){
-allBoxes.forEach((box) => {
-  sum = 0 + i;
-    return sum ;
+firstBox.forEach((box , index) => {
+    box.addEventListener("click" , (event) => {
+   event.target.innerText = index + 1;
+   
+
+    setTimeout(() => {
+        event.target.innerText = "" ;
+    } , 5000 );
+});
+
+});
+
+
+secondBox.addEventListener("click" , (event) =>{
+let text = event.target.dataset.text;
+  event.target.innerText = text;
+
+  setTimeout(() => {
+    event.target.innerText = " " ;
+  } , 5000);
 })
-}
-);
-
-allBoxes.addEventListener("click" , handleClick);
