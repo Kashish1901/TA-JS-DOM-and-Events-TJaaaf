@@ -29,7 +29,7 @@
         </div>
         <div class="form-control">
           <label for="movies">What do you love?</label>
-          <select id="gender" name="gender">
+          <select id="gender" name="choice">
             <option value="movies">Movies</option>
             <option value="series">Series</option>
             <option value="others">Others</option>
@@ -41,7 +41,7 @@
           <input
             id="color"
             type="color"
-            name="email"
+            name="color"
             placeholder="Enter your email"
           />
         </div>
@@ -52,8 +52,8 @@
             type="range"
             max="10"
             step="1"
-            name="email"
-            placeholder="Enter your email"
+            name="movie"
+            
           />
         </div>
         <div class="form-control">
@@ -91,6 +91,21 @@
         </div>
         <button type="submit">Submit</button>
       </form>
+      <div class="modal">
+        <div class="container content">
+          <div class="flex">
+            <h1>Hello Sameer</h1>
+            <button class="modal__close">X</button>
+          </div>
+        <p>Email : isameer@gmail.com</p>
+        <p>You Love : Movies</p>
+        <p>color : #ffffff</p>
+        <p>Rating : 8</p>
+        <p>Book Genre : Fiction </p>
+        
+        <p>👉 You agree to Terms and Conditions </p>
+      </div>
+      </div>
     </div>
     <script src="./script.js"></script>
   </body>
