@@ -91,3 +91,28 @@ input[type='text'] {
 .terms {
   display: inline-block;
 }
+.modal{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: .9;
+}
+.modal .content{
+  background-color: white;
+  padding: 5rem 4rem;
+  font-size: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.flex{
+  display: flex;
+  justify-content: space-between;
+}
+.click{
+  margin : 0 auto;
+}
