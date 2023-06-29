@@ -59,7 +59,9 @@ form input{
   width: 100%;
   padding: 1rem;
   font-size: 17px;
+  border-radius: 5px;
   margin: 1rem 0;
+
 }
 form button{
   width: 100%;
@@ -71,12 +73,20 @@ form button{
   margin: 1rem 0;
 }
 form small{
-  font-size: 20px;
-  color: grey;
+  font-size: 15px;
+  color: rgb(244, 49, 49);
 }
 button:hover{
   background-color: rgba(0, 0, 0, 0.1);
   border: .8px solid black;
+  
+}
+.error{
+  border: 2px solid red;
+  
+}
+.success{
+  border: 2px solid green;
   
 }
 
