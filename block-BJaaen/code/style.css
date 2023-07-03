@@ -1,0 +1,47 @@
+.container{
+    max-width: 500px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+h1{
+    text-align: center;
+    background-color: aquamarine;
+    color: antiquewhite;
+    padding: 1rem;
+}
+.result{
+    text-align: center;
+    padding: 1rem;
+    font-size: 30px
+}
+span{
+    font-size: 22px;
+    font-weight: 500;
+    padding: .2rem 2rem;
+    background-color: rgb(241, 186, 186);
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.selected{
+    background-color: rgb(250, 164, 133);
+    padding: .4rem .6rem;
+    border-radius: 50%;
+}
+.user-icons {
+    font-size: 38px;
+    font-weight: 200;
+    padding: 2rem;
+}
+.computer-icons{
+    font-size: 38px;
+    font-weight: 200;
+    padding: 2rem;
+    color: rgb(53, 19, 7);
+}
+.computer{
+    background-color: rgb(251, 235, 229);
+    margin-top: 2rem;
+}
