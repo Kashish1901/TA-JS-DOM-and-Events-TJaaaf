@@ -1,0 +1,22 @@
+body{
+    background-color: lightsalmon;
+}
+.container{
+    background-color: lightskyblue;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 54px;
+    border: 1px solid black;
+    height: 500px;
+    border-radius: 12px;
+}
+h1{
+    font-size: 53px;
+    text-align: center;
+}
+input{
+    width: 90%;
+    padding: 4px;
+    font-size: 20px;
+}
