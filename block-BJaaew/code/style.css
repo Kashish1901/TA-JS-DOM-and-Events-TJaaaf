@@ -5,3 +5,69 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3px;
+}
+header{
+  background-image: linear-gradient(to right , rgba(90,182,220 , 0.8) , rgba(158,72,248 , 0.9));
+  text-align: center;
+  padding: 10px;
+}
+h1{
+  color: white;
+  font-size: 32px;
+  padding: 10px;
+  font-weight: 500;
+}
+h2{
+  font-size: 23px;
+  padding: .5rem;
+  text-align: center;
+}
+p{
+  font-size: 1.1rem;
+  padding:1.2rem;
+  text-align: center;
+}
+img{
+  border-radius: 50%;
+  margin-right: 2rem;
+  border: .1rem solid rgb(50,99,183);
+}
+input{
+  width: 20%;
+  height: 30px;
+  padding: 6px;
+  font-size: 20px;
+  color: darkgrey;
+}
+li{
+  list-style: none;
+}
+.flex-30{
+  border: 2px solid white;
+  margin: 1.5rem 1rem;
+ flex: 0 1 30%;
+ padding: .6rem;
+  border-radius: 10px;
+  background-color: white;
+  height: 20rem;
+  box-shadow: 4px 6px 6px 4px rgb(218,223,231);
+}
+.wrap{
+flex-wrap: wrap;
+}
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a{
+  background-color: rgb(227,231,254);
+  color: blue;
+  padding: .9rem 7rem;
+  border-radius: 5px;
+  text-align: center;
+}
