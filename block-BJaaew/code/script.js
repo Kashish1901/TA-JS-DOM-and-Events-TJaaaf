@@ -1,9 +1,15 @@
-let parentELm = document.querySelector('ul');
+let parentELm = document.querySelector('.container');
+let tags = document.querySelector('.tags');
+let search = document.querySelector('.search');
 
 let allPeople = got.houses.reduce ((acc , cv) => {
 acc= acc.concat(cv.people);
 return acc;
 } , []);
+
+let allTags = got.houses.map((house) => house.name);
+
+let activeHouse = "" ;
 
 function createCard(data=allPeople){
     parentELm.innerHTML = "" ;
@@ -32,8 +38,34 @@ function createCard(data=allPeople){
     })
 }
 
-createCard();
+function createTagsUl(){
+    tags.innerHTML= "" ;
+    allTags.forEach((tag) => {
+        let li = document.createElement('li');
+        li.innerText = tag;
 
+        if(activeHouse === tag){
+            li.classList.add(active);
+        }
+
+        li.addEventListener("click" , () => {
+            activeHouse = tag;
+            let peopleOfHouse = got.houses.find((house) => house.name === tag).people || [];
+            createCard(peopleOfHouse)
+        })
+        tags.append(li);
+    })
+}
+
+function handleChange(event){
+    let searchText = event.target.value;
+    let filteredPeople = allPeople.filter((p) => p.name.toLowerCase().includes(searchText.toLowerCase()));
+    createCard(filteredPeople)
+}
+
+search.addEventListener("input" , handleChange)
+createCard(allPeople);
+createTagsUl(allTags);
 
 //let cardsHTML = allPeople.map((person) => {
 //return `<li class="flex-30">

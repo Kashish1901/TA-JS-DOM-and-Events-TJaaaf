@@ -71,3 +71,26 @@ a{
   border-radius: 5px;
   text-align: center;
 }
+.tags{
+  display: flex;
+  justify-content:space-between;
+  
+}
+.tags li{
+  background-color: black;
+  color: white;
+  padding: 4px 7px;
+  font-size: 20px;
+  margin: 5px;
+  border-radius: 4px;
+}
+.tags li:hover{
+  background-color: white;
+  color: black;
+  box-shadow: 1px 2px 3px 3px rgba(0 , 0, 0, 0.8);
+}
+.active{
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
