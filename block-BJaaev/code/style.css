@@ -8,6 +8,7 @@ body{
     background-color: whitesmoke;
     padding: 20px;
     margin-top: 58px;
+    border: 2px solid black;
 }
 .button-cont{
 margin: 0 auto;
