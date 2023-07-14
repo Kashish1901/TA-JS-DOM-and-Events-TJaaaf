@@ -99,7 +99,7 @@ function updateActiveBtn(btn = activeButton){
     all.classList.remove('selected');
     active.classList.remove('selected');
     clear.classList.remove('selected');
-    
+
     if (btn === "all"){
         all.classList.add('selected');
     }
