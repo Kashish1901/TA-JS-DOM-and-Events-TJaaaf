@@ -1,0 +1,9 @@
+{
+    "name" : "Todo Application" ,
+    "description" : "Todo Application for new tab" ,
+    "version" : "1.0.1" ,
+    "manifest_version" : 3,
+    "chrome_url_overrides" : {
+        "newtab" : "index.html"
+    }
+}
