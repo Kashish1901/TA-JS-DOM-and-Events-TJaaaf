@@ -1,0 +1,46 @@
+.container{
+    max-width: 1200px;
+    height: 90vh;
+    margin: 0 auto;
+    padding: 5px 8px;
+    background-color: lightblue;
+    text-align: center;
+}
+h1{
+    font-size: 50px;
+    margin-top: 57px;
+    color: dimgrey;
+   
+    text-align: center;
+    text-transform: capitalize;
+}
+h1:hover{
+    color: darkgray;
+    box-shadow: 1px 2px 2px 3px rgba(0 , 0, 0, 0.3);
+}
+h2{
+    text-align: center;
+    margin-top: 12px;
+    color: rgb(92, 4, 4);
+    font-size: 30px;
+}
+h2:hover{
+    font-size: 40px;
+    color: black;
+}
+.box{
+    width: 30%;
+    height: 30%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    font-size: 30px;
+    margin-top: 40px;
+    border-radius: 6px;
+}
+.box:hover{
+    box-shadow:  1px 2px 2px 3px rgba(0 , 0, 0, 0.3);
+    width: 40%;
+    height: 40%;
+}
